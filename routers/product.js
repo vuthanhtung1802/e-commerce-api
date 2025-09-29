@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-let { products } = require("../data/fakeData");
+let { products } = require("../data/products");
 
 router.get("/", (req, res) => {
   res.json(products);

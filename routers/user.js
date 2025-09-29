@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-let { users } = require("../data/fakeData");
+let { users } = require("../data/users");
 
 // Lấy tất cả user
 router.get("/", (req, res) => {

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-let { stores } = require("../data/fakeData");
+let { stores } = require("../data/stores");
 
 // Lấy tất cả store
 router.get("/", (req, res) => {

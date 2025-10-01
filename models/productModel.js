@@ -41,8 +41,8 @@ function update(id, newData) {
 function remove(id) {
   const newProducts = products.filter((p) => p.id !== id);
   if (products.length === newProducts.length) return false;
-  products = newProducts; // ghi đè lại mảng
+  products = newProducts;
   return true;
 }
 
-module.exports = { getAll, getById, add, update };
+module.exports = { getAll, getById, add, update, remove };

@@ -2,9 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const userRoutes = require("./routers/user");
-const storeRoutes = require("./routers/store");
-const productRoutes = require("./routers/product");
+const userRoutes = require("./routers/userRouter");
+const storeRoutes = require("./routers/storeRouter");
+const productRoutes = require("./routers/productRouter");
 
 const app = express();
 app.use(bodyParser.json());
